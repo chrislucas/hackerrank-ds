@@ -1,0 +1,11 @@
+Pesquisa bst distance between nodes
+
+https://www.hackerrank.com/challenges/bst-maintenance/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+
+https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+
+https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/
+
+https://algorithms.tutorialhorizon.com/find-the-distance-between-two-nodes-of-a-binary-tree/
+
+https://medium.com/algorithm-problems/distance-between-2-nodes-in-a-bst-8be78f71871e
