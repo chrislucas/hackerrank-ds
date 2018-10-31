@@ -1,0 +1,2 @@
+https://www.hackerrank.com/domains/data-structures?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bsubdomains%5D%5B%5D=heap
+https://www.hackerrank.com/challenges/jesse-and-cookies/problem
