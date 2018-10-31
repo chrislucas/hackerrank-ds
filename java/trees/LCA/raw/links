@@ -1,15 +1,15 @@
 https://en.wikipedia.org/wiki/Lowest_common_ancestor
 
-
-
 https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/
 https://www.geeksforgeeks.org/tarjans-off-line-lowest-common-ancestors-algorithm/
-
-
 https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
-
 https://www.hackerrank.com/topics/lowest-common-ancestor
 
+Distance node in a BTree
+https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+http://www.techiedelight.com/distance-between-given-pairs-of-nodes-binary-tree/
+
+https://www.geeksforgeeks.org/shortest-distance-between-two-nodes-in-bst/
 
 Problems
 https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem
@@ -32,3 +32,10 @@ https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 
 https://www.hackerrank.com/topics/lowest-common-ancestor
+
+
+Problemas
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1135
+
+Heavy light decomposition
+https://www.urionlinejudge.com.br/judge/pt/problems/view/2860

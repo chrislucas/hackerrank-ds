@@ -20,24 +20,14 @@ public class LcaBinarySearchTree {
         }
     }
 
-
-
     private static <T extends Comparable<T>> Node<T> insert(Node<T> root, T value) {
         Node<T> node = new Node<>(value);
         if(root != null) {
             if (root.data.compareTo(value) > 0) {
-                if (root.left == null)
-                    root.left = node;
-                else {
-                    insert(root.left, value);
-                }
+                root.left = (root.left == null) ? node : insert(root.left, value);
             }
             else {
-                if (root.right == null)
-                    root.right = node;
-                else {
-                    insert(root.right, value);;
-                }
+                root.right = (root.right == null) ? node : insert(root.right, value);
             }
         }
         else
@@ -48,14 +38,11 @@ public class LcaBinarySearchTree {
     private static <T extends Comparable<T>> Node<T> lca(Node<T> node, T a, T b) {
         if (node == null)
             return null;
-        else {
-            if (node.data.compareTo(a) > 0 && node.data.compareTo(b) > 0)
-                return lca(node.left, a, b);
-            else if (node.data.compareTo(a) < 0 && node.data.compareTo(b) < 0)
-                return lca(node.right, a, b);
-            else
-                return node;
-        }
+        else if (node.data.compareTo(a) > 0 && node.data.compareTo(b) > 0)
+            return lca(node.left, a, b);
+        else if (node.data.compareTo(a) < 0 && node.data.compareTo(b) < 0)
+            return lca(node.right, a, b);
+        return node;
     }
 
     private static <T extends Comparable<T>> Node<T> ilca(Node<T> node, T a, T b) {
@@ -86,30 +73,22 @@ public class LcaBinarySearchTree {
         Integer [][] set = {
             {5, 8, 3, 4, 2, 9, 7}
             ,{20, 8, 22, 4, 12, 10, 14}
+            , {2, 1, 3, 4, 5, 6}
+            , {4, 2, 3, 1, 7, 6}
         };
         Node root = null;
-        for (Integer s : set[0]) {
+        for (Integer s : set[3]) {
             root = insert(root, s);
         }
         inorder(root);
-
         System.out.println("");
-
-        /*
-        System.out.println(lca(root, 10, 14));
-        System.out.println(ilca(root, 10, 14));
-        System.out.println(lca(root, 14, 8));
-        System.out.println(ilca(root, 14, 8));
-        System.out.println(lca(root, 10, 22));
-        System.out.println(ilca(root, 10, 22));
-        */
-
-        System.out.println(lca(root, 4, 2));
-        System.out.println(ilca(root, 4, 2));
-        System.out.println(lca(root, 8, 3));
-        System.out.println(ilca(root, 8, 3));
-        System.out.println(lca(root, 9, 7));
-        System.out.println(ilca(root, 9, 7));
-
+        System.out.println(lca(root, 2, 1));
+        System.out.println(lca(root, 1, 2));
+        System.out.println(lca(root, 1, 6));
+        System.out.println(lca(root, 1, 3));
+        System.out.println(lca(root, 6, 3));
+        System.out.println(ilca(root, 6, 3));
+        System.out.println(ilca(root, 1, 3));
+        inorder(root);
     }
 }
