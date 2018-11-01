@@ -33,7 +33,7 @@ public class SegmentTree {
         return segment[i];
     }
 
-    public int getRangeSum(int qs, int qe) throws Exception {
+    private int getRangeSum(int qs, int qe) throws Exception {
         if (qs < 0 || qe > n-1 || qs > qe)
             throw new Exception("Fora do range");
         return getRangeSum(0, n-1, qs, qe, 0);

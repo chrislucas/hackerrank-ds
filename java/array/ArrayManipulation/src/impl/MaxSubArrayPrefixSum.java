@@ -37,10 +37,10 @@ public class MaxSubArrayPrefixSum {
             prefixSum[i] = prefixSum[i-1] + values[i];
         }
         long minPrefixSum = 0, rs = Long.MIN_VALUE;
-        for (int i = 0; i < prefixSum.length ; i++) {
-            long a = prefixSum[i] - minPrefixSum;
+        for (long aPrefixSum : prefixSum) {
+            long a = aPrefixSum - minPrefixSum;
             rs = Math.max(rs, a);
-            minPrefixSum = Math.min(minPrefixSum, prefixSum[i]);
+            minPrefixSum = Math.min(minPrefixSum, aPrefixSum);
         }
         return rs;
     }
