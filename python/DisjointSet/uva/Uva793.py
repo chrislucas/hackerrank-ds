@@ -1,3 +1,8 @@
+'''
+https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=734
+'''
+
+
 class PathCompression:
     def __init__(self, n):
         self.data = [int(x) for x in range(0, n)]
@@ -28,17 +33,29 @@ class PathCompression:
         self.components -= 1
 
 
-def test_1():
-    pathc = PathCompression(9)
-    pathc.union(0, 1)
-    pathc.union(1, 2)
-    pathc.union(2, 3)
-    pathc.union(4, 8)
-    pathc.union(5, 4)
-    pathc.union(5, 6)
-    pathc.union(5, 7)
-    pathc.union(0, 5)
-
+def run():
+    cases = int(input().strip())
+    input()
+    for i in range(cases):
+        s, f = 0, 0
+        enters = int(input().strip())
+        path_c = PathCompression(enters + 1)
+        while True:
+            try:
+                c, p, q = list(input().strip().split(" "))
+            except Exception:
+                break
+            if c == 'c':
+                path_c.union(int(p), int(q))
+            else:
+                if path_c.connected(int(p), int(q)):
+                    s += 1
+                else:
+                    f += 1
+        print("%d,%d" % (s, f))
+        if i < cases-1:
+            print()
+        cases -= 1
 
 if __name__ == '__main__':
-    test_1()
+    run()
