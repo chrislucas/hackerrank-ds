@@ -2,6 +2,11 @@ package solution;
 
 import java.util.Arrays;
 
+/**
+ * https://stackoverflow.com/questions/48162233/logic-used-behind-array-manipulation-of-hackerrank
+ * https://www.hackerrank.com/challenges/crush/problem
+ * */
+
 public class Solution {
 
 
@@ -17,11 +22,9 @@ public class Solution {
      * */
     static int [] diffArray(int [] a, int p) {
         int data [] = new int[a.length-1];
-
         for (int i = 0; i <a.length-1; i++) {
             data[i] = a[i+1] - a[i];
         }
-
         return data;
     }
 
@@ -45,11 +48,15 @@ public class Solution {
             // o i-esimo elemento e acrescido de k
             // os valores armazenados em values[i+1 ... j] (j inclusive) nao tem diferenca de de values[i]
             values[i] += k;
-            // os valores apos j (caso j nao seja o ultimo indice do vetor) tem armazenado um valor Q - k
+            // os valores apos j (caso j nao seja o ultimo indice do vetor) tem armazenado um valor -k
+            // significa que os elemento apos o indice j tem um valor x-k
             if ((j+1) <= n)
                 values[j+1] -= k;
         }
         long acc = 0, max = 0;
+        /**
+         * Aplicando um somatorio [a[0], a[0]+a[1], ..., a[0] + ... a[n-1]]
+         * */
         for (int i = 1; i <=n; i++) {
             acc += values[i];
             if (max < acc)
