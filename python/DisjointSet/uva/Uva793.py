@@ -52,9 +52,10 @@ def run():
                     s += 1
                 else:
                     f += 1
-        print("%d,%d" % (s, f))
-        if i < cases-1:
+
+        if i > 0:
             print()
+        print("%d,%d" % (s, f))
         cases -= 1
 
 if __name__ == '__main__':
