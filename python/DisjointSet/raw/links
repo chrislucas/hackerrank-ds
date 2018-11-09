@@ -1,0 +1,84 @@
+https://www.hackerrank.com/challenges/kundu-and-tree/problem
+https://www.hackerrank.com/challenges/maximum-cost-queries/problem
+
+
+https://www.hackerearth.com/practice/notes/disjoint-set-union-union-find/
+
+https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/containers-of-choclates-1/
+
+https://www.hackerearth.com/challenge/competitive/code-monk-graph-theory-i/algorithm/monks-birthday-treat/
+
+https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/tutorial/
+
+https://www.hackerearth.com/practice/codemonk/
+
+tutoriais
+https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/
+https://www.geeksforgeeks.org/union-find/
+https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+https://www.geeksforgeeks.org/union-find-algorithm-union-rank-find-optimized-path-compression/
+
+
+detect cycles spoj
+https://www.spoj.com/problems/EPIC1304/
+https://www.spoj.com/problems/ADACYCLE/
+https://www.spoj.com/problems/UCV2013B/
+https://www.spoj.com/problems/PT07Y/
+https://www.spoj.com/problems/CYCLE/
+
+Hackerearth
+https://www.hackerearth.com/challenge/competitive/code-monk-disjoint-set-union/problems/
+
+
+Detect cycles with DFS
+https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
+
+Detect cycles
+https://efficientcodeblog.wordpress.com/2017/11/12/cycle-detection-in-a-graph/
+
+
+Problems Uva
+https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=734
+https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1048
+https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1119
+
+
+http://codeforces.com/problemset/problem/25/D
+
+***
+http://codeforces.com/contest/566/problem/D
+http://codeforces.com/topic/19580/en17
+http://codeforces.com/blog/entry/19525
+http://codeforces.com/blog/entry/19525
+***
+Problems
+https://a2oj.com/contest?ID=31390
+https://a2oj.com/contest?ID=12199
+https://a2oj.com/contest?ID=28800
+https://a2oj.com/contest?ID=37099
+http://codeforces.com/blog/entry/22747?
+
+
+Graph
+https://a2oj.com/Category.jsp?ID=17
+https://a2oj.com/category?ID=101
+https://a2oj.com/contest?ID=17148
+
+https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2847
+
+2
+
+10
+c 1 5
+c 2 7
+q 7 1
+c 3 9
+q 9 6
+c 2 5
+q 7 5
+
+1
+q 1 1
+c 1 1
+q 1 1
