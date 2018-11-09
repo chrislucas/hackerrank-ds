@@ -44,7 +44,11 @@ def minus_mod(a, b, m):
 def multiply_mod(a, b, m):
     return (a % m * b % m) % m
 
-
+'''
+Sacada genial
+https://gist.github.com/AhmetCanSolak/59c8df5e7dd8bb22925ccb354280b596
+https://math.stackexchange.com/questions/838792/counting-triplets-with-red-edges-in-each-pair?newreg=60eee35f0b3844de852bda39f6dfec8
+'''
 def solver1(counter, nodes):
     c, result = 1000000007, 0
     # nCr(nodes, 3)
@@ -59,8 +63,16 @@ def solver1(counter, nodes):
     return int(minus_mod(total_triplets_comb, result, c))
 
 
-def solver2(counter, nodes):
-    return
+def solver2(counter):
+    mod = 1000000007
+    nodes = len(counter)
+    res = 0
+    for i in range(0, nodes):
+        for j in range(i+1, nodes):
+            for k in range(j+1, nodes):
+                # (res + ((c[i] * c[j] * c[k]) % mod)) % mod
+                res = add_mod(res, multiply_mod(multiply_mod(counter[i], counter[j], mod), counter[k], mod), mod)
+    return res
 
 
 def run():
@@ -76,7 +88,8 @@ def run():
         if path_c.data[i] == i:
             counter.append(path_c.weight[i])
 
-    print(solver1(counter, nodes))
+    #print(solver1(counter, nodes))
+    print(solver2(counter))
 
 
 if __name__ == '__main__':
